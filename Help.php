@@ -5,7 +5,7 @@ class Help {
 			$result = array();
 			foreach($models as $model) array_push($result, self::arToArray($model));
 		} else {
-			$result = $models->_attributes;	
+			$result = $models->attributes;	
 			foreach($models->_related as $name=>$model) array_push($result, self::arToArray($model));
 		}
 
