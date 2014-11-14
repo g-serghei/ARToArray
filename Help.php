@@ -16,5 +16,9 @@ class Help {
 
 		return $result;
 	}
+    
+    public static function arToJSON($models) {
+		return CJSON::encode(self::arToArray($models));
+	}
 }
 ?>
